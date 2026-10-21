@@ -4,7 +4,7 @@ A bank relationship context layer for corporate treasury. One short record per b
 what was agreed, the words it was agreed in, when it takes effect and who looks at it next.
 
 Built because the answer to "what did they agree to charge us" usually exists in writing and
-cannot be retrieved. That is a structure problem, not a knowledge problem, and structure is
+cannot be retrieved. That is a structure problem rather than a knowledge problem. Structure is
 free.
 
 ## What it does
@@ -14,18 +14,18 @@ free.
 - Finds the deadline that matters: renewal or maturity minus the notice period, which appears
   in no document and no system
 - Builds the pack for a bank review, with every line quoted so it can go across the table
-- Checks a record for gaps, and runs a handover test on it
+- Checks a record for gaps and runs a handover test on it
 
 ## Install
 
-**Claude Code or the Claude desktop app:** clone it into your skills directory, or into a
+**Claude Code or the Claude desktop app:** clone it into your skills directory or into a
 project folder. Claude picks it up from `SKILL.md`.
 
 ```
 git clone https://github.com/boomahora/bank-file.git ~/.claude/skills/bank-file
 ```
 
-Or use the green Code button above, then Download ZIP, and unzip it as a folder called
+Or use the green Code button above, then Download ZIP, unzipping it as a folder called
 `bank-file`.
 
 **A Claude Project:** upload the files and paste `SKILL.md` into the project instructions.
@@ -68,11 +68,11 @@ It reads only what it has not seen, supersedes the rows that changed and tells y
 
 Start with your largest bank. Ten to fifteen files is plenty.
 
-**Saving emails matters.** In Outlook use File then Save As, or drag the message into the
-folder. Forwarding it to yourself rewrites the header block, and the sender and date are what
-make a row provable six months later. Choose `.eml` if the dialog offers it: a `.msg` is a
-container that may not open, and intake will tell you which files it could not read rather
-than filing them blind.
+**Saving emails matters.** In Outlook use File then Save As. Dragging the message into the
+folder does the same. Forwarding it to yourself rewrites the header block, which loses the
+sender and the date, the two things that make a row provable six months later. Choose `.eml`
+if the dialog offers it, since a `.msg` is a container that may not open. Intake names the
+files it could not read rather than filing them blind.
 
 Searches that surface the right messages: `from:@bank-domain hasattachments:yes` and
 `subject:(waiver OR pricing OR "fee schedule" OR concession)`.
@@ -83,12 +83,12 @@ Searches that surface the right messages: `from:@bank-domain hasattachments:yes`
 |---|---|
 | `SKILL.md` | The rules, the six rows and how the workflows route |
 | `workflows/intake.md` | A folder of anything into named, filed sources |
-| `workflows/build-record.md` | Documents to a record, and updates when new ones land |
+| `workflows/build-record.md` | Documents to a record, then updates when new ones land |
 | `workflows/derived-dates.md` | The deadline behind the deadline, ending in calendar entries |
 | `workflows/review-pack.md` | What to take into the review |
 | `workflows/check.md` | Gaps, contradictions and the handover test |
-| `reference/fields.md` | The six rows, and the twenty fields left out on purpose |
-| `reference/formats.md` | camt.086 and camt.053, and why enrollment has a lag |
+| `reference/fields.md` | The six rows plus the twenty fields left out on purpose |
+| `reference/formats.md` | camt.086 and camt.053, plus why enrollment has a lag |
 | `templates/record.md` | Empty record |
 | `templates/meeting-note.md` | The note shape that stays extractable later |
 | `example/northbank/` | One bank, filled in from four fictional documents |
@@ -112,7 +112,7 @@ to open. Whether you open it is on you.
 ## Safety
 
 It will refuse to produce or confirm account numbers, payment instructions or signatory
-changes, and it masks account numbers to the last four digits. An authoritative-looking
+changes. It masks account numbers to the last four digits. An authoritative-looking
 internal record is exactly what a business email compromise attack needs, so those changes
 stay on the phone with a contact you already know.
 
