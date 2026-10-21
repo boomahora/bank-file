@@ -16,6 +16,16 @@ free.
 - Builds the pack for a bank review, with every line quoted so it can go across the table
 - Checks a record for gaps and runs a handover test on it
 
+## The two rules
+
+**A row with no quote is not a fact.** Not a paraphrase and not a summary. The words somebody
+wrote, with the file they wrote them in. Where the documents do not state something, the
+record says so rather than inferring it.
+
+**A new value supersedes rather than overwrites.** The old row stays, with its date. The
+history is the negotiating position, because "when did this change" is usually the question
+that matters.
+
 ## Install
 
 **Claude Code or the Claude desktop app:** clone it into your skills directory or into a
