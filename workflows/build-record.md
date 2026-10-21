@@ -51,6 +51,20 @@ this whole method exists to prevent.
 Where two documents disagree and no date separates them, produce both rows and flag the
 conflict. Do not pick one.
 
+## Where the record goes
+
+Write it to `record.md` beside `sources/`, in the shape of `templates/record.md`, creating the
+file if it is not there. Fill the **Sources** table with every file in `sources/` and one line
+on what each covers.
+
+The user builds `sources/` by hand, because nothing here can read a mailbox or decide which
+twelve documents matter. Everything from there on is output: the record, the superseded rows
+and the Not stated list.
+
+Where there is no file access, such as a Claude Project, output the whole record as one block
+for the user to paste into `record.md` instead. Never hand back loose rows with no file to put
+them in.
+
 ## Handing back
 
 Present the rows as candidates, then say plainly:
