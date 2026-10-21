@@ -2,24 +2,29 @@
 
 ## Before starting
 
-Check that a `sources/` folder exists with files in it. If it is empty, stop and give the
-user the capture list below rather than producing a record from nothing.
+Look at the bank folder first.
 
-**What to put in `sources/`:**
+- **Files sitting loose in it**, or files in `sources/` that the record's **Sources** table
+  does not list: run `workflows/intake.md` before anything else. Rows built from unfiled
+  documents cite filenames that are about to change
+- **`sources/` has files and the table lists them**: carry on
+- **Nothing in the folder at all**: stop and give the user the list below rather than
+  producing a record from nothing
+
+**What to collect:**
 
 - The facility agreement, the mandate letter, the current fee schedule and the one before it
-- Emails from the relationship manager, saved as `.msg` or `.eml`. Saving the message or
-  dragging it into the folder keeps the sender and the date. Forwarding it to yourself
-  rewrites the header block and loses both, which is what makes a row provable later
+- Emails from the relationship manager. Saving the message or dragging it into the folder
+  keeps the sender and the date. Forwarding it rewrites the header block and loses both, which
+  is what makes a row provable later. `.eml` is readable, while `.msg` is a container that may
+  not open
 - Meeting notes, however rough
 - The RFP scoring sheet or selection note, if one exists
 
 Outlook searches that surface them: `from:@bank-domain hasattachments:yes`, and
 `subject:(waiver OR pricing OR "fee schedule" OR concession)`.
 
-Name files date first so the folder sorts itself: `2025-03-04-rm-email-wire-waiver.msg`.
-
-Ten to fifteen files is plenty for a first pass.
+Names do not matter. Intake handles them. Ten to fifteen files is plenty for a first pass.
 
 ## Extraction
 

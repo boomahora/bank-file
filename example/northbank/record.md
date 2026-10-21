@@ -1,6 +1,6 @@
 # Northbank N.V. — relationship record
 
-Owner: AC · Second reader: TM · Last rebuilt: 16 October 2026
+Owner: AC · Second reader: TM · Last updated: 16 October 2026
 
 Fictional, for the worked example. Built from the four files in `sources/` and nothing else.
 
@@ -38,12 +38,12 @@ Looked for in the sources and not there. This list is the agenda for the next re
 
 ## Sources
 
-| File | What it is |
-|---|---|
-| `2024-06-12-facility-agreement-extract.md` | EUR 40m revolver. Margin, commitment fee, notice, covenant |
-| `2025-03-04-rm-email-wire-waiver.md` | The pricing agreement that contradicts the fee schedule |
-| `2025-04-01-fee-schedule-v3-extract.md` | Published schedule, effective 1 Apr 2025 |
-| `2026-07-11-review-meeting-note.md` | Last review. Two promises, one billing error, one open item on our side (group structure chart for the KYC refresh) |
+| File | What it is | As delivered |
+|---|---|---|
+| `2024-06-12-facility-agreement-extract.md` | EUR 40m revolver. Margin, commitment fee, notice, covenant | `Northbank RCF executed copy.pdf` |
+| `2025-03-04-rm-email-wire-waiver.md` | The pricing agreement that contradicts the fee schedule | `RE_ RE_ FW_ pricing.eml` |
+| `2025-04-01-fee-schedule-v3-extract.md` | Published schedule, effective 1 Apr 2025 | `fee schedule FINAL (3).pdf` |
+| `2026-07-11-review-meeting-note.md` | Last review. Two promises, one billing error, one open item on our side (group structure chart for the KYC refresh) | `notes from thursday.docx` |
 
 Statement formats: not recorded. Ask whether camt.086 is available, since the billing error
 above took 15 months to surface against PDF invoices.

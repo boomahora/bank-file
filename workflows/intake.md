@@ -55,6 +55,10 @@ Update the record's **Sources** table from it, keeping the delivered name. Someb
 cross-checking a row against the shared drive is looking for the name the bank sent, not the
 one you chose.
 
+Where a record already exists and cites a file you have just renamed, update those citations
+to the new name and say which rows you touched. A quote pointing at a filename that no longer
+exists reads as a broken record, and `workflows/check.md` will flag it as one.
+
 ## Where to stop and ask
 
 File the obvious ones in one pass and report. Stop and ask on:

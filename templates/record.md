@@ -1,6 +1,6 @@
 # <Bank name> — relationship record
 
-Owner: <name> · Second reader: <name> · Last rebuilt: <date>
+Owner: <name> · Second reader: <name> · Last updated: <date>
 
 Two rules: a row with no quote is not a fact, and a new value supersedes rather than
 overwrites. Keep superseded rows below, with their dates.

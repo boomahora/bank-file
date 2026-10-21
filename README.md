@@ -68,9 +68,11 @@ It reads only what it has not seen, supersedes the rows that changed and tells y
 
 Start with your largest bank. Ten to fifteen files is plenty.
 
-**Saving emails matters.** In Outlook use File then Save As to write a `.msg`, or drag the
-message into the folder. Forwarding it to yourself rewrites the header block, and the sender
-and date are what make a row provable six months later.
+**Saving emails matters.** In Outlook use File then Save As, or drag the message into the
+folder. Forwarding it to yourself rewrites the header block, and the sender and date are what
+make a row provable six months later. Choose `.eml` if the dialog offers it: a `.msg` is a
+container that may not open, and intake will tell you which files it could not read rather
+than filing them blind.
 
 Searches that surface the right messages: `from:@bank-domain hasattachments:yes` and
 `subject:(waiver OR pricing OR "fee schedule" OR concession)`.
