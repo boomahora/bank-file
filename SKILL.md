@@ -51,12 +51,27 @@ deliberately left out and why.
 
 | Ask | Read |
 |---|---|
+| Documents dropped in a bank folder, unsorted | `workflows/intake.md` |
 | Build or update a record from documents | `workflows/build-record.md` |
 | Find the real deadlines in agreements | `workflows/derived-dates.md` |
 | Prepare for a bank review | `workflows/review-pack.md` |
 | Check a record for gaps, or run the handover test | `workflows/check.md` |
 
 Templates are in `templates/`. A filled example is in `example/northbank/`.
+
+The usual path is one bank folder with documents dumped in it: file and name them, build the
+record, find the dates. After that, each time new documents land, intake files them and
+`build-record.md` updates only what they changed.
+
+## What maintaining it means
+
+File names, filing, the **Sources** table and spotting what arrived are mechanics. Do them
+without asking.
+
+A value in a row is not mechanics. It changes only with a quote behind it, and a value that
+replaces another goes through the **Superseded** table with its date. Never tidy, merge or
+correct a row silently, because the record is only worth having if every row can be traced to
+words somebody wrote.
 
 ## Safety
 

@@ -77,6 +77,27 @@ hour.
 
 ## Updating an existing record
 
-Never edit a value in place. Move the old row into the **Superseded** table with the date it
-stopped applying and what replaced it, then add the new row. If the old row's effective date
-is unknown, say so rather than guessing one.
+Run `workflows/intake.md` first if anything has been dropped in unfiled.
+
+Then work out what is actually new. Compare `sources/` against the record's **Sources** table:
+the files missing from the table are the ones to read. Leave the rest. Re-reading settled
+documents produces fresh wording for rows that have not changed, which looks like movement
+and is not.
+
+For each candidate out of the new files:
+
+- **Something the record does not cover.** A new row, if it is one of the six. If it is not,
+  it belongs under **Not stated** or nowhere
+- **A new value for a row that exists.** Never edit in place. Move the old row into the
+  **Superseded** table with the date it stopped applying and what replaced it, then add the
+  new row. If the old row's effective date is unknown, say so rather than guessing one
+- **The same value again.** Nothing to change. Add the file to that row's source, which makes
+  the row harder to argue with
+- **A value that contradicts an existing row, with no date to separate them.** Both rows stay,
+  flagged. Do not pick one
+
+Clear anything from **Not stated** that the new files answer.
+
+Finish by reporting what changed: rows added, rows superseded, rows confirmed and anything
+flagged. A record that changed without the user being told what changed is worse than one that
+did not change at all.

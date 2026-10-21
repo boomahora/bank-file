@@ -24,8 +24,8 @@ at the next review.
 
 ## Sources
 
-Every file in `sources/`, with one line on what it covers.
+Every file in `sources/`, with one line on what it covers and the name it arrived under.
 
-| File | What it is |
-|---|---|
-| | |
+| File | What it is | As delivered |
+|---|---|---|
+| | | |

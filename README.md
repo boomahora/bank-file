@@ -9,6 +9,7 @@ free.
 
 ## What it does
 
+- Files and names whatever you drop in a bank folder, from the date inside each document
 - Turns fee schedules, facility agreements, emails and meeting notes into a sourced record
 - Finds the deadline that matters: renewal or maturity minus the notice period, which appears
   in no document and no system
@@ -34,18 +35,38 @@ a model. They work as a checklist with no tooling at all.
 
 ## Use it
 
+Make a folder for one bank and drop the documents in. They can be named anything.
+
 ```
 banks/
   northbank/
-    record.md
+    Scan_0012.pdf
+    fee schedule FINAL (3).pdf
+    RE_ RE_ FW_ pricing.eml
+    notes from thursday.docx
+```
+
+Then ask it to take the folder in. It reads each file, names it from the contents with the
+document's own date, moves it into `sources/` and writes the record:
+
+```
+banks/
+  northbank/
+    record.md                                  written for you
     sources/
       2024-06-12-facility-agreement.pdf
-      2025-03-04-rm-email-wire-waiver.msg
+      2025-03-04-rm-email-wire-waiver.eml
       2025-04-01-fee-schedule-v3.pdf
       2026-07-11-review-meeting-note.md
 ```
 
-Start with your largest bank. Put ten to fifteen files in `sources/`, then ask for the record.
+The **Sources** table keeps the name each file arrived under, so a row can still be traced
+back to what is on the shared drive.
+
+After that, drop new documents into the folder whenever they turn up and ask it to update.
+It reads only what it has not seen, supersedes the rows that changed and tells you what moved.
+
+Start with your largest bank. Ten to fifteen files is plenty.
 
 **Saving emails matters.** In Outlook use File then Save As to write a `.msg`, or drag the
 message into the folder. Forwarding it to yourself rewrites the header block, and the sender
@@ -59,7 +80,8 @@ Searches that surface the right messages: `from:@bank-domain hasattachments:yes`
 | Path | What it is |
 |---|---|
 | `SKILL.md` | The rules, the six rows and how the workflows route |
-| `workflows/build-record.md` | Documents to a record |
+| `workflows/intake.md` | A folder of anything into named, filed sources |
+| `workflows/build-record.md` | Documents to a record, and updates when new ones land |
 | `workflows/derived-dates.md` | The deadline behind the deadline, ending in calendar entries |
 | `workflows/review-pack.md` | What to take into the review |
 | `workflows/check.md` | Gaps, contradictions and the handover test |
