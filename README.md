@@ -10,11 +10,13 @@ free.
 ## What it does
 
 - Files and names whatever you drop in a bank folder, from the date inside each document
-- Turns fee schedules, facility agreements, emails and meeting notes into a sourced record
+- Turns fee schedules, facility agreements, emails and meeting notes into a record where every
+  row carries the words it came from
 - Finds the deadline that matters: renewal or maturity minus the notice period, which appears
   in no document and no system
 - Builds the pack for a bank review, with every line quoted so it can go across the table
-- Checks a record for gaps and runs a handover test on it
+- Checks a record for gaps, then tries to answer what the bank agreed using nothing but the
+  folder, so you find what is missing before a handover does
 
 ## The two rules
 
@@ -92,14 +94,14 @@ Searches that surface the right messages: `from:@bank-domain hasattachments:yes`
 | Path | What it is |
 |---|---|
 | `SKILL.md` | The rules, the six rows and how the workflows route |
-| `workflows/intake.md` | A folder of anything into named, filed sources |
+| `workflows/intake.md` | Names and files whatever you dropped in, by the date inside each document |
 | `workflows/build-record.md` | Documents to a record, then updates when new ones land |
 | `workflows/derived-dates.md` | The deadline behind the deadline, ending in calendar entries |
 | `workflows/review-pack.md` | What to take into the review |
 | `workflows/check.md` | Gaps, contradictions and the handover test |
 | `reference/fields.md` | The six rows plus the twenty fields left out on purpose |
 | `reference/formats.md` | camt.086 and camt.053, plus why enrollment has a lag |
-| `templates/record.md` | Empty record |
+| `templates/record.md` | The empty record, with the superseded and not-stated sections most people would not think to add |
 | `templates/meeting-note.md` | The note shape that stays extractable later |
 | `example/northbank/` | One bank, filled in from four fictional documents |
 
